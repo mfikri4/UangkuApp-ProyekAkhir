@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/bg_atas">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Tambah Data"
+            android:shadowColor="@color/white"
+            android:textColor="#707070"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textStyle="bold">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_catatan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+
+            android:layout_marginTop="20dp"
+            android:hint="Judul Catatan"
+            android:padding="15dp"
+            android:background="@drawable/custom_input"/>
+
+        <EditText
+            android:id="@+id/et_jumlah"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            
+            android:layout_column="0"
+            android:hint="Jumlah "
+            android:padding="15dp"
+            android:background="@drawable/custom_input"/>
+
+        <EditText
+            android:id="@+id/et_deskripsi"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:hint="Deskripsi"
+            android:padding="15dp"
+            android:background="@drawable/custom_input"/>
+
+
+        <ImageButton
+            android:id="@+id/btn_simpan"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_simpan"
+
+            android:padding="15dp"
+            android:textColor="@android:color/white"/>
+
+        <ImageButton
+            android:id="@+id/btn_hapus"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_hapus"
+            android:padding="15dp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

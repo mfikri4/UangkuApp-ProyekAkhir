@@ -10,24 +10,15 @@
     >
 
 
-    <Button
+    <ImageButton
         android:id="@+id/Logout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_logout"
         android:text="Button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/IBDInformasi" />
-
-    <ImageButton
-        android:id="@+id/ib_Pemasukan"
-        android:layout_width="120dp"
-        android:layout_height="110dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="292dp"
-        android:background="@drawable/btn_pemasukan_input"
+        app:layout_constraintHorizontal_bias="0.957"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -35,10 +26,20 @@
         android:id="@+id/ib_Pengeluaran"
         android:layout_width="120dp"
         android:layout_height="110dp"
-        android:layout_marginTop="292dp"
+        android:layout_marginTop="276dp"
         android:layout_marginEnd="64dp"
         android:background="@drawable/btn_pengeluaran_input"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ib_Pemasukan"
+        android:layout_width="120dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="276dp"
+        android:background="@drawable/btn_pemasukan_input"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
@@ -75,7 +76,8 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/poppins_semibold"
         android:text="Menu"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

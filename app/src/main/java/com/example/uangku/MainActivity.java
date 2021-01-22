@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     //Deklarasi Variable
     private FirebaseAuth.AuthStateListener authListener;
     private FirebaseAuth auth;
-    private Button BtnLogout;
+    private ImageButton BtnLogout;
     private ImageButton ibdPemasukan, ibdPengeluaran, btninfo, btnPengeluaran, btnPemasukan;
 
     @Override
@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
         btninfo.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View v) {
-                 Intent info = new Intent(MainActivity.this,Splash.class);
+                 Intent info = new Intent(MainActivity.this,Informasi.class);
                  startActivity(info);
              }
          });
@@ -89,16 +89,18 @@ public class MainActivity extends AppCompatActivity {
         btnPengeluaran.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent inputdatakeluar = new Intent(MainActivity.this,InputDataKeluar.class);
-                startActivity(inputdatakeluar);
+                DialogFormPengeluaran dialogForm = new DialogFormPengeluaran("", "", "", "", "Tambah");
+                dialogForm.show(getSupportFragmentManager(), "form");
+
             }
         });
 
         btnPemasukan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent inputdatamasuk = new Intent(MainActivity.this,InputDataMasuk.class);
-                startActivity(inputdatamasuk);
+                DialogFormPemasukan dialogForm = new DialogFormPemasukan("", "", "", "", "Tambah");
+                dialogForm.show(getSupportFragmentManager(), "form");
+
             }
         });
     }
